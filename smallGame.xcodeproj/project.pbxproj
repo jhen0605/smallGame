@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A76FC00A26970EB100C68D89 /* 清松手寫體2jas.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A76FC00926970EB100C68D89 /* 清松手寫體2jas.ttf */; };
+		A76FC00B26970EB100C68D89 /* 清松手寫體2jas.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A76FC00926970EB100C68D89 /* 清松手寫體2jas.ttf */; };
+		A76FC00C26970EB100C68D89 /* 清松手寫體2jas.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A76FC00926970EB100C68D89 /* 清松手寫體2jas.ttf */; };
 		A7AD9B0E26970273000354FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AD9B0D26970273000354FB /* AppDelegate.swift */; };
 		A7AD9B1026970273000354FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AD9B0F26970273000354FB /* SceneDelegate.swift */; };
 		A7AD9B1226970273000354FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AD9B1126970273000354FB /* ViewController.swift */; };
@@ -35,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A76FC00926970EB100C68D89 /* 清松手寫體2jas.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "清松手寫體2jas.ttf"; path = "../../../Downloads/字型/清松手寫體2jas.ttf"; sourceTree = "<group>"; };
 		A7AD9B0A26970273000354FB /* smallGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smallGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7AD9B0D26970273000354FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7AD9B0F26970273000354FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +101,7 @@
 		A7AD9B0C26970273000354FB /* smallGame */ = {
 			isa = PBXGroup;
 			children = (
+				A76FC00926970EB100C68D89 /* 清松手寫體2jas.ttf */,
 				A7AD9B0D26970273000354FB /* AppDelegate.swift */,
 				A7AD9B0F26970273000354FB /* SceneDelegate.swift */,
 				A7AD9B1126970273000354FB /* ViewController.swift */,
@@ -230,6 +235,7 @@
 			files = (
 				A7AD9B1A26970274000354FB /* LaunchScreen.storyboard in Resources */,
 				A7AD9B1726970274000354FB /* Assets.xcassets in Resources */,
+				A76FC00A26970EB100C68D89 /* 清松手寫體2jas.ttf in Resources */,
 				A7AD9B1526970273000354FB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -238,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A76FC00B26970EB100C68D89 /* 清松手寫體2jas.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A76FC00C26970EB100C68D89 /* 清松手寫體2jas.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
