@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var numberSegment: UISegmentedControl!   //數字的語言
     
     
-    //
+    //動物的IBO
     @IBOutlet weak var dogButton: UIButton!
     @IBOutlet weak var pigButton: UIButton!
     @IBOutlet weak var catButton: UIButton!
@@ -33,7 +33,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var elephantButton: UIButton!
     @IBOutlet weak var cowButton: UIButton!
     
-    //
+    //數字的IBO
     @IBOutlet weak var numberOne: UIButton!
     @IBOutlet weak var numberTwo: UIButton!
     @IBOutlet weak var numberThree: UIButton!
@@ -46,12 +46,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var numberZero: UIButton!
  
     
-    
+    //動物的IBA
     @IBAction func animalSound(_ sender: UIButton) {
         
         var animalCall = AVSpeechUtterance()
         
-        
+        //動物裡SegmentedControl的第一個（中文）
         if animalSegment.selectedSegmentIndex == 0{
             if sender == dogButton{
                    animalCall = AVSpeechUtterance(string: "狗")
@@ -101,7 +101,7 @@ class ViewController: UIViewController {
             animalCall.voice = AVSpeechSynthesisVoice(language: "zh-TW")
                    }
         
-        
+        //動物裡SegmentedControl的第二個（英文）
         else if animalSegment.selectedSegmentIndex == 1{
             if sender == dogButton{
                    animalCall = AVSpeechUtterance(string: "dog")
@@ -152,7 +152,7 @@ class ViewController: UIViewController {
         }
   
         
-        
+        //動物裡SegmentedControl的第三個（叫聲）
             else if animalSegment.selectedSegmentIndex == 2{
                   if sender == dogButton{
                          animalCall = AVSpeechUtterance(string: "woof")
@@ -199,24 +199,31 @@ class ViewController: UIViewController {
                   if sender == cowButton{
                       animalCall = AVSpeechUtterance(string: "moo")
                      }
-                  
-                  let synthesizer = AVSpeechSynthesizer()
-                          synthesizer.speak(animalCall)
                           
                 animalCall.voice = AVSpeechSynthesisVoice(language: "en-US")
             }
-        let synthesizer = AVSpeechSynthesizer()
+       
+     //說「動物」的話
+       let synthesizer = AVSpeechSynthesizer()
             synthesizer.speak(animalCall)
     }
 
-        
-        //
+    
+    
+    
+    
+    
+    
+    
+     
+    
+    //數字的IBA
         
         @IBAction func numberSound(_ sender: UIButton) {
             
             var numberCall = AVSpeechUtterance()
             
-            
+            //數字裡SegmentedControl的第一個（中文）
             if numberSegment.selectedSegmentIndex == 0{
                 if sender == numberOne{
                     numberCall = AVSpeechUtterance(string: "一")
@@ -251,7 +258,7 @@ class ViewController: UIViewController {
                 numberCall.voice = AVSpeechSynthesisVoice(language: "zh-TW")
                        }
         
-            
+            //動物裡SegmentedControl的第二個（英文）
             else if numberSegment.selectedSegmentIndex == 1{
                       if sender == numberOne{
                           numberCall = AVSpeechUtterance(string: "one")
@@ -285,7 +292,8 @@ class ViewController: UIViewController {
                          }
                       numberCall.voice = AVSpeechSynthesisVoice(language: "en-US")
                              }
-    
+       
+            //說「數字」的話
         let synthesizer = AVSpeechSynthesizer()
             synthesizer.speak(numberCall)
             
